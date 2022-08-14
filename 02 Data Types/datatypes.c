@@ -51,10 +51,13 @@ int main()
     // 550 has now been added to the initial score value, score now holds a new value
     printf(" Score is: %d \n\n", score);
 
-    // Constant values
-    const int zip_code = 930001;
+    // Defining a Constant
+    const int zip_code = 930001; 
+    printf(" (Constant) Zip Code is: %d \n", zip_code);
 
-    printf(" (Constant) Zip Code is: %d", zip_code);
+    //alternatively
+    #define country_code 234
+    printf(" (Constant) Country Code is: %d", country_code);
 
     // Trying to update the zip code with line below will show the following error: assignment of read-only variable 'zip_code'
     // Delete the slashes // at the beginning of next line below, save and run this file to see the error. Then put back the line when done
